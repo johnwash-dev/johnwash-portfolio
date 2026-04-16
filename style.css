@@ -38,9 +38,9 @@ body{
     overflow-x: hidden !important;
 }
 
-/* .container-fluid{
+.container-fluid{
     overflow-x: hidden !important;
-} */
+}
 
 .logo span{
   background-color: var(--green-clr);
@@ -87,7 +87,6 @@ ul a:hover{
 
 section {
      min-height: 100vh;
-    /* padding: 60px 0; */
     display: flex;
     justify-content: center !important;
     align-items: center !important;
@@ -145,7 +144,7 @@ section {
 
 .glow{
     position: relative;
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
 }
 
 .glow::before{
@@ -259,7 +258,7 @@ section {
     }
 
     .glow::before{
-        inset: 6rem !important;
+        inset: 1rem !important;
     }
 }
 
@@ -287,7 +286,7 @@ section {
     }
 
     .glow::before{
-        inset: 6rem !important;
+        inset: 1rem !important;
     }
     
 }
@@ -317,7 +316,7 @@ section {
     }
 
      .glow::before{
-        inset: 6rem !important;
+        inset: 1rem !important;
     }
 
     .project-body .project-btns a{
