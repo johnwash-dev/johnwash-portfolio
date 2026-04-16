@@ -6,7 +6,7 @@ A personal portfolio showcasing practical full-stack projects built with React a
 
 ## 🚀 Live Portfolio
 
-👉 https://your-vercel-link.vercel.app
+👉 https://johnwash-portfolio.vercel.app/
 
 ---
 
