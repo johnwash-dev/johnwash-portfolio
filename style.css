@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
@@ -32,8 +32,6 @@
 body{
     margin: 0 !important;
     padding: 0 !important;
-    /* box-sizing: border-box; */
-    /* outline: 1px solid red; */
     width: 100%;
     overflow-x: hidden !important;
 }
@@ -86,16 +84,12 @@ ul a:hover{
 }
 
 section {
-     min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center !important;
     align-items: center !important;
 }
 
-/* #home .row {
-    align-items: center !important;
-    justify-content: center !important;
-} */
 
 .row {
     margin-left: 0;
@@ -115,7 +109,7 @@ section {
 }
 
 .myimg{
-    width: 25rem;
+    width: 23rem;
     aspect-ratio: 1;
     border-radius: 50%;
     border-top: 1rem solid white;
@@ -128,9 +122,8 @@ section {
      inset 0 0 1rem white,
      0 0 2rem var(--green-clr),
      inset 0 0 2rem var(--green-clr),
-      0 0 6rem var(--green-clr),
+      0 0 4rem var(--green-clr),
      inset 0 0 3rem var(--green-clr);
-    /* overflow-x: hidden !important; */
 
 }
 
@@ -151,7 +144,7 @@ section {
    content: "";
    background: var(--green-clr);
    position: absolute;
-   inset: 5rem;
+   inset: 6rem;
    border-radius: 50%;
    z-index: -1;
    filter: blur(70px);
@@ -246,19 +239,32 @@ section {
 
 
 
+@media (max-width:1050px){
+    .myimg{
+        width: 20rem;
+    }
+}
 
+@media (max-width:992px){
+    .about-para{
+        font-size: 12px !important;
+    }
+}
 
 @media (max-width:768px) {
     .project-body .project-btns{
        margin-top: 10px !important;
     }
 
+    .about-para{
+        font-size: 14px !important;
+    }
     .project-card{
         height: fit-content !important;
     }
 
     .glow::before{
-        inset: 1rem !important;
+        inset: 6rem !important;
     }
 }
 
@@ -267,6 +273,13 @@ section {
 @media screen and (max-width: 552px){
     .myimg{
         width: 18rem;
+        box-shadow: 
+    0 0 1rem white,
+     inset 0 0 1rem white,
+     0 0 2rem var(--green-clr),
+     inset 0 0 2rem var(--green-clr),
+      0 0 3rem var(--green-clr),
+     inset 0 0 3rem var(--green-clr);
     }
 
     .card-body i{
@@ -286,12 +299,16 @@ section {
     }
 
     .glow::before{
-        inset: 1rem !important;
+        inset: 6rem !important;
     }
     
 }
 
 @media (max-width: 425px){
+    .myimg{
+        width: 16rem;
+    }
+    
     .card-body .skill-txt{
         font-size: 7px !important;
     }
@@ -316,7 +333,7 @@ section {
     }
 
      .glow::before{
-        inset: 1rem !important;
+        inset: 5rem !important;
     }
 
     .project-body .project-btns a{
